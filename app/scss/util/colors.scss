@@ -1,0 +1,21 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+}
+
+$colors: (
+  activated-text: (
+    darkest-desaturated-blue: hsl(273, 75%, 66%),
+    soft-red: hsl(240, 73%, 65%)
+  ),
+
+  normal-text: (
+    darkest-grayish-blue: hsl(237, 12%, 33%),
+    dark-grayish-blue: hsl(240, 6%, 50%)
+  ),
+
+  background-gradient: (
+    soft-violet: hsl(273, 75%, 66%),
+    soft-blue: hsl(240, 73%, 65%)
+  )
+)

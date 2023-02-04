@@ -1,0 +1,48 @@
+@use "../util" as u; // .. goes one lvl up out of globals to scss folder
+@use '../util/functions.scss' as *;
+
+html {
+  font-size: 0.75rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; //inherits html box-sizing value
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-image: 
+    linear-gradient(clr(background-gradient, soft-violet),
+    clr(background-gradient, soft-blue));
+    color: clr(normal-text, dark-grayish-blue);
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+
+  padding-inline: rem(22);
+}
+
+footer {
+
+  background-color: clr(background-gradient, soft-blue);
+
+  text-align: center;
+  
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+

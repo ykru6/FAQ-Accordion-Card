@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/app/asset/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/dist/style.css">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body>
+  <main class="main">
+    <article class="card">
+      <section class="card__image">
+        <picture>
+          <source media="(max-width: 640px)" srcset="/app/asset/images/illustration-woman-online-mobile.svg">
+          <img class="image" src="/app/asset/images/illustration-woman-online-desktop.svg" alt="Mobile">
+        </picture>
+        <div>
+          <img class="box" src="/app/asset/images/illustration-box-desktop.svg" alt="Box">
+        </div>
+      </section>
+
+      <section class="card__text">
+        <h1 class="card__heading">FAQ</h1>
+        <div class="card__text--container">
+          
+          <button class="accordion" value="button1">
+            <span>How many team members can I invite?</span>
+            <i id="icons" class="fa-solid fa-chevron-down"></i>
+          </button>
+          <p class="panel">
+            You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+          </p>
+        
+          <button class="accordion" value="button2">
+            <span>What is the maximum file upload size?</span>
+            <i id="icons" class="fa-solid fa-chevron-down"></i>
+          </button>
+          <p class="panel">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+        
+          <button class="accordion" value="button3">
+            <span>How do I reset my password?</span>
+            <i id="icons" class="fa-solid fa-chevron-down"></i>
+          </button>
+          <p class="panel">
+            Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+          </p>
+          
+          <button class="accordion" value="button4">
+            <span>Can I cancel my subscription?</span>
+            <i id="icons" class="fa-solid fa-chevron-down"></i>
+          </button>
+          <p class="panel">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </p>
+          
+          <button class="accordion" value="button5">
+            <span>Do you provide additional support?</span>
+            <i id="icons" class="fa-solid fa-chevron-down"></i>
+          </button>
+          <p class="panel">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+
+  <script src="/dist/script.js"></script>
+  <script src="https://kit.fontawesome.com/49ebfc0313.js" crossorigin="anonymous"></script>
+</body>
+</html>
